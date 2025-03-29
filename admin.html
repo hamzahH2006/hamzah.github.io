@@ -1,0 +1,57 @@
+<!-- admin.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin Panel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.mixx.com/css/app.css">
+    <style>
+        .registration-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        .registration-table th, 
+        .registration-table td {
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="font-inter antialiased bg-gray-50 p-8">
+    <div class="max-w-6xl mx-auto bg-white p-8 rounded-xl shadow">
+        <h2 class="text-2xl font-bold mb-6">Registrations List</h2>
+        <table class="registration-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody id="registrationsList">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const registrations = JSON.parse(localStorage.getItem('registrations')) || [];
+            const tbody = document.getElementById('registrationsList');
+
+            registrations.forEach(reg => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${reg.username}</td>
+                    <td>${reg.email}</td>
+                    <td>${reg.password}</td>
+                    <td>${new Date(reg.timestamp).toLocaleString()}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        });
+    </script>
+</body>
+</html>
